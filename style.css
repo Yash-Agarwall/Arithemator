@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(212, 10, 34, 0.1);
+}
+.container{
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 5px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 300px;  
+    height: 80vh; 
+    border-radius: 10px;
+}
+.container div{
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+
+    /* fixed size of div containers were stopping the desired display */
+    /* height: 40px;
+    width: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 4px;
+    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+#display{
+    grid-column: span 4;
+    grid-row: span 2;
+    /* height: 70px; */
+    background-color: rgb(161, 179, 114);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-family: monospace;
+    /* font-size: 1.5rem; */
+}
+#clear{
+    background-color: rgba(255, 0, 0, 0.8);
+    grid-column: span 2;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+#add{
+    grid-row: span 2;
+    background-color: rgba(0, 255, 0, 0.7);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#equals{
+    background-color: rgba(0, 162, 255, 0.993);
+}
