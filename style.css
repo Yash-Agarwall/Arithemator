@@ -1,9 +1,11 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+
+    background: linear-gradient(135deg, hsl(240, 20%, 22%), #2a2a40);
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(212, 10, 34, 0.1);
+    /* background-color: #1e1e2f; */
 }
 .container{
     display: grid;
@@ -12,7 +14,7 @@ body{
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 5px;
     padding: 8px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 300px;  
     height: 80vh; 
     border-radius: 10px;
@@ -30,8 +32,13 @@ body{
     font-size: 1.1rem;
     cursor: pointer;
     margin: 4px;
-    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 6px 1px 0 rgba(0, 0, 0, 0.35),
+    0 5px 5px rgba(0, 0, 0, 0.5),
+    0 15px 25px rgba(0, 0, 0, 0.35);
     border-radius: 7px;
+    cursor: pointer;
+    user-select: none;
+
 }
 #display{
     grid-column: span 4;
@@ -53,6 +60,7 @@ body{
     font-weight: bolder;
     font-size: 1.3em;
 }
+
 #add{
     grid-row: span 2;
     background-color: rgba(0, 255, 0, 0.7);
